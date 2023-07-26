@@ -65,6 +65,9 @@ a:hover{
     color:gray;
 }
 
+h2{
+    margin-bottom: 5px;
+}
 @media (max-width:576px){
     article{
         width: 90%;
