@@ -68,6 +68,15 @@ a:hover{
 h2{
     margin-bottom: 5px;
 }
+
+.imgs{
+    width: 80%;
+    margin: 5px auto 0 auto;
+}
+
+.imgs img{
+    width: 100%;
+}
 @media (max-width:576px){
     article{
         width: 90%;
