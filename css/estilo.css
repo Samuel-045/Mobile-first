@@ -194,13 +194,18 @@ footer ul li a:hover{
     color: rgb(245, 245, 49);
 }
 
+footer .sectionfooter{
+    padding: 5px 20px;
+}
+
 footer{
-    padding: 20px;
     background-color: black;
 }
 
-footer .final h5{
+footer .final h6{
     color:black;
+    font-weight: initial;
+    font-weight: 600;
 }
 
 footer .final{
@@ -228,6 +233,6 @@ footer .final{
 
     iframe{
         width:100%; 
-        height:180px;
+        height:190px;
     }
 }
