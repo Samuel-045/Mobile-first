@@ -43,7 +43,7 @@ nav ul li:hover{
     color: white;
 }
 
-span{
+article span{
     color: gray;
     font-size: small;
 }
@@ -59,7 +59,7 @@ section ul{
     margin-left: 20px;
 }
 
-section ul li{
+article section ul li{
     color:rgb(245, 245, 49);
 }
 
@@ -116,7 +116,9 @@ section{
 
 
 section form span,
-section p span{
+section p span,
+footer p span,
+footer h4{
     color: rgb(245, 245, 49);
 }
 
@@ -178,14 +180,40 @@ aside .imageAss .imageAss2 img{
     width: 70%;
 }
 
+footer ul li{
+    list-style-type: none;
+    color: white;
+}
+
+footer p,
+footer ul li a{
+    color: white;
+}
+
+footer ul li a:hover{
+    color: rgb(245, 245, 49);
+}
+
 footer{
+    padding: 20px;
     background-color: black;
+}
+
+footer .final h5{
+    color:black;
+}
+
+footer .final{
+    padding: initial;
+    margin: initial;
+    text-align: center;
+    background-color: rgb(255, 232, 25);
 }
 
 @media (max-width:576px){
     article,
     aside{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
