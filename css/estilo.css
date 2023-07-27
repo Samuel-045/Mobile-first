@@ -12,7 +12,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background: rgb(245, 245, 49);
 }
 
 #titulo{
@@ -37,6 +37,10 @@ nav ul li{
     display: inline;
     text-decoration: none;
     padding: 0.5em;
+}
+
+nav ul li:hover{
+    color: white;
 }
 
 span{
@@ -77,7 +81,7 @@ section .terlist li{
 }
 
 section .terlist li a{
-    color: rgb(245, 245, 49);
+    color: rgb(245, 216, 49);
 }
 
 section .terlist li a:hover{
@@ -106,14 +110,88 @@ h2{
     font-weight: 900;
 }
 
+section{
+    margin: 10px 0;
+}
+
+
+section form span,
+section p span{
+    color: rgb(245, 245, 49);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-weight: 500;
+}
+
+form input{
+    margin: 5px 0 10px 0;
+    height: 25px;
+    border-radius: 5px;
+    border-color: rgb(187, 178, 178);
+}
+
+article form #submit{
+    margin:10px 0;
+    border: none;
+    background: rgb(255, 232, 25);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+aside .formulario2{
+    box-shadow: 2px 2px 10px 0.1px gray;
+    margin:30px 0;
+}
+
+aside .formulario{
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside form #submit{
+    border: none;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    font-weight: 700;
+}
+
+aside .imageAss{
+    height: 60vw;
+    border: 1px solid gray;
+}
+
+aside .imageAss2{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+aside .imageAss .imageAss2 img{
+    width: 70%;
+}
+
+footer{
+    background-color: black;
+}
+
 @media (max-width:576px){
-    article{
+    article,
+    aside{
         width: 80%;
         margin: 0 auto;
     }
 
-    section{
-        margin: 10px 0;
+    article form #submit,
+    aside form #submit{
+        width: 210px;
     }
 
     .posts .post{
