@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 header{
@@ -15,6 +16,7 @@ header{
 }
 
 #titulo{
+    padding: 5px 0;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -23,6 +25,7 @@ header{
 }
 
 nav {
+    padding: 5px 0;
     margin: 0 auto;
 }
 
@@ -70,16 +73,22 @@ h2{
 }
 
 .imgs{
-    width: 80%;
+    width: 100%;
     margin: 5px auto 0 auto;
 }
 
 .imgs img{
     width: 100%;
+    border-radius: 4px;
 }
+
+.posts .post p{
+    font-weight: 900;
+}
+
 @media (max-width:576px){
     article{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -87,8 +96,12 @@ h2{
         margin: 10px 0;
     }
 
+    .posts .post{
+        margin: 20px 0;
+    }
+
     iframe{
-        width:90%; 
-        height:15%;
+        width:100%; 
+        height:180px;
     }
 }
