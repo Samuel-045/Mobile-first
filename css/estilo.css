@@ -34,13 +34,9 @@ nav {
 }
 
 nav ul li{
-    padding: 0.5em;
-}
-
-nav ul li,
-footer .sectionfooter .ulfooter li {
     display: inline;
     text-decoration: none;
+    padding: 0.5em;
 }
 
 nav ul li:hover{
@@ -60,7 +56,13 @@ section ul{
     margin-left: 20px;
 }
 
-article section ul li{
+article section ul li,
+section .terlist li a,
+section form span,
+section p span,
+footer p span,
+footer h4,
+footer .ulfooter span{
     color:rgb(245, 245, 49);
 }
 
@@ -79,10 +81,6 @@ section .terlist{
 
 section .terlist li{
     color: black;
-}
-
-section .terlist li a{
-    color: rgb(245, 216, 49);
 }
 
 section .terlist li a:hover{
@@ -115,14 +113,6 @@ section{
     margin: 10px 0;
 }
 
-
-section form span,
-section p span,
-footer p span,
-footer h4{
-    color: rgb(245, 245, 49);
-}
-
 form{
     display: flex;
     flex-direction: column;
@@ -132,11 +122,20 @@ form label{
     font-weight: 500;
 }
 
-form input{
+form input, 
+form textarea{
     margin: 5px 0 10px 0;
-    height: 25px;
+    border:  1px solid rgb(187, 178, 178);
     border-radius: 5px;
-    border-color: rgb(187, 178, 178);
+}
+
+form input{
+    height: 25px;
+}
+
+textarea{
+    width:auto; 
+    height: 10rem;
 }
 
 article form #submit{
@@ -187,7 +186,8 @@ footer ul li{
 }
 
 footer p,
-footer ul li a{
+footer ul li a,
+footer .ulfooter a{
     color: white;
 }
 
@@ -199,18 +199,19 @@ footer .sectionfooter{
     padding: 5px 20px;
 }
 
-footer section .ulfooter li a{
+footer .ulfooter a{
     text-transform: uppercase;
 }
 
-footer section .ulfooter .item1,
-footer section .ulfooter .item2,
-footer section .ulfooter .item3,
-footer section .ulfooter .item4,
-footer section .ulfooter .item5,
-footer section .ulfooter .item6,
-footer section .ulfooter .item7{
+footer  .ulfooter .item1,
+footer  .ulfooter .item2,
+footer  .ulfooter .item3,
+footer  .ulfooter .item4,
+footer  .ulfooter .item5,
+footer  .ulfooter .item6,
+footer  .ulfooter .item7{
     padding-left: 40px;
+    margin-right: 8px;
 }
 
 footer{
