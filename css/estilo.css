@@ -21,7 +21,6 @@ header{
     text-align: center;
     width: 100%;
     background-color: black;
-    color: white;
 }
 
 .texttitulo{
@@ -29,18 +28,46 @@ header{
 }
 
 nav {
-    padding: 5px 0;
+    padding: 5ppx 0;
     margin: 0 auto;
 }
 
-nav ul li{
-    display: inline;
-    text-decoration: none;
-    padding: 0.5em;
+nav ul li:hover,
+aside form #submit,
+footer ul li,
+article form #submit,
+#titulo,
+footer p,
+footer ul li a,
+footer .ulfooter a,
+.navButton button a{
+    color: white;
 }
 
-nav ul li:hover{
-    color: white;
+.navButton{
+    padding: 5px;
+    display: flex;
+}
+
+.navButton .cadastro{
+    width: 50%;
+    max-width: 210px;
+    min-width: 190px;
+}
+
+.navButton .cadastro,
+.navButton button{
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+}
+
+.navButton button a{
+    font-weight: 500;
+}
+
+.navButton button{
+    background: transparent;
 }
 
 article span{
@@ -79,12 +106,9 @@ section .terlist{
     list-style-type: square;
 }
 
-section .terlist li{
-    color: black;
-}
-
+section .terlist li,
 section .terlist li a:hover{
-    color:black ;
+    color: black;
 }
 
 .referencia{
@@ -142,7 +166,6 @@ article form #submit{
     margin:10px 0;
     border: none;
     background: rgb(255, 232, 25);
-    color: white;
     padding: 4px;
     border-radius: 4px;
     font-weight: 700;
@@ -162,7 +185,6 @@ aside form #submit{
     border: none;
     border-radius: 6px;
     background: black;
-    color: white;
     font-weight: 700;
 }
 
@@ -180,15 +202,9 @@ aside .imageAss .imageAss2 img{
     width: 70%;
 }
 
-footer ul li{
+footer ul li,
+nav ul li{
     list-style-type: none;
-    color: white;
-}
-
-footer p,
-footer ul li a,
-footer .ulfooter a{
-    color: white;
 }
 
 footer ul li a:hover{
@@ -199,7 +215,12 @@ footer .sectionfooter{
     padding: 5px 20px;
 }
 
-footer .ulfooter a{
+footer .ulfooter{
+    padding-top: 10px;    
+}
+
+footer .ulfooter a,
+.navButton button a{
     text-transform: uppercase;
 }
 
@@ -231,6 +252,23 @@ footer .final{
     background-color: rgb(255, 232, 25);
 }
 
+article form #submit,
+aside form #submit{
+    width: 55%;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+@keyframes showSideBar{
+    from{ margin-top: -35vw;}
+    to{ margin-top: 0;}
+}
+
+@keyframes showSideBar2{
+    from{margin-top: 0;}
+    to{ margin-top:-35vw}
+}
+
 @media (max-width:576px){
     article,
     aside{
@@ -238,10 +276,25 @@ footer .final{
         margin: 0 auto;
     }
 
-    article form #submit,
-    aside form #submit{
-        width: 210px;
+    .navButton nav li{
+        padding: initial;
+        padding: 10px 0;
     }
+    .navButton nav {
+        position: absolute;
+        margin-top: -35vw;
+        background-color: white;
+        width: 90%;
+        display: none;
+    }
+
+    .navButton{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+
 
     .posts .post{
         margin: 20px 0;
