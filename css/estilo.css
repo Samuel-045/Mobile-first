@@ -15,6 +15,29 @@ header{
     background: rgb(245, 245, 49);
 }
 
+header .titulo .barra{
+    display: flex;
+    border-radius: 20px;
+    background: white;
+    width: 60%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+header .titulo .barra input{
+    width:90%;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding-left: 4px;
+    background-color: rgb(231, 231, 231);
+}
+
+header .titulo .icones{
+    padding: 10px 0 0 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
 #titulo{
     padding: 5px 0;
     font-weight: bold;
