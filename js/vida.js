@@ -7,16 +7,14 @@ const botao2 = document.getElementById("botao2")
 function togglesidebar(){
     showsdbar = !showsdbar
 
-    if(showsdbar){
-        nav.style.marginTop="0";
-        nav.style.display="initial"
-        nav.style.animationName="showSideBar"
+    if(showsdbar){        
+        nav.style.maxHeight=nav.scrollHeight+"px"
         main.style.filter='blur(2px)'
+        document.getElementById("imagem").src="../image/x.png"
     }else{
-        nav.style.marginTop="-35vw"
-        nav.style.display="none"
-        nav.animationName="showSideBar2"
+        nav.style.maxHeight="0"
         main.style.filter=''
+        document.getElementById("imagem").src="../image/menu.png"
     }
 
 }
@@ -29,3 +27,9 @@ function closesidebar(){
 
 botao1.addEventListener('click', togglesidebar)
 botao2.addEventListener('click', closesidebar)
+
+window.addEventListener('resize', function(event){
+    if(window.innerWidth>768 && showsdbar){
+        togglesidebar()
+    }
+})
