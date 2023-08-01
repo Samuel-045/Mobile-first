@@ -1,4 +1,4 @@
-var main =  document.querySelector("main")
+var main =  document.querySelector("container")
 var nav = document.getElementById("navegation")
 var showsdbar = false
 const botao1 = document.getElementById("botao1")

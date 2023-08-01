@@ -12,7 +12,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgb(245, 245, 49);
+    background: #F4CA10;
 }
 
 header .titulo .barra{
@@ -20,7 +20,7 @@ header .titulo .barra{
     border-radius: 20px;
     background: white;
     width: 60%;
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -113,7 +113,7 @@ section p span,
 footer p span,
 footer h4,
 footer .ulfooter span{
-    color:rgb(245, 245, 49);
+    color:#F4CA10;;
 }
 
 a{
@@ -122,7 +122,7 @@ a{
 }
 
 a:hover{
-   color:rgb(245, 245, 49);
+   color:#F4CA10;
 }
 
 section .terlist{
@@ -179,7 +179,7 @@ textarea{
 article form #submit{
     margin:10px 0;
     border: none;
-    background: rgb(255, 232, 25);
+    background: #F4CA10;
     padding: 4px;
     border-radius: 4px;
     font-weight: 700;
@@ -222,7 +222,7 @@ nav ul li{
 }
 
 footer ul li a:hover{
-    color: rgb(245, 245, 49);
+    color: #F4CA10;
 }
 
 footer .sectionfooter{
@@ -263,7 +263,7 @@ footer .final{
     padding: initial;
     margin: initial;
     text-align: center;
-    background-color: rgb(255, 232, 25);
+    background-color: #F4CA10;;
 }
 
 article form #submit,
@@ -354,17 +354,39 @@ aside form #submit{
         justify-content: space-around;
     }
 
-    main article .posts{
+    .container article .posts{
         display: flex;
         flex-wrap:wrap;
     }
 
-    main article .posts .post{
+    .container article .posts .post{
         width: 45%;
         margin-left: 12px;
     }
 
     iframe{
         height:250px;
+    }
+}
+
+@media (min-width:770px){
+    article,
+    aside{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    article .video{
+        width: initial;
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* @media (min-width:770px){
+    article,
+    aside{
+        width: 90%;
+        margin: 0 auto;
     }
 }
