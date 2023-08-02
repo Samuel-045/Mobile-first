@@ -18,9 +18,11 @@ header .titulo .barra{
     display: flex;
     border-radius: 20px;
     background: white;
+    height: 30px;
     width: 60%;
     max-width: 400px;
     margin: 0 auto;
+    padding-left: 2px;
 }
 
 header .titulo .barra input{
@@ -32,14 +34,13 @@ header .titulo .barra input{
 }
 
 header .titulo .icones{
-    padding: 10px 0 0 0;
-    width: 70%;
-    margin: 0 auto;
+    padding: 10px 0;
+    width: 230px;
 }
 
 header .titulo .icones img{
-    width: 10%;
-    max-width: 25px;
+    margin: 0 2px;
+    width: 25px;
 }
 
 #titulo{
@@ -72,7 +73,7 @@ footer .ulfooter a,
 }
 
 .navButton{
-    padding: 5px;
+    padding: 10px;
     background: #F4CA10;
     display: initial;
     position: -webkit-sticky;   
@@ -91,6 +92,7 @@ footer .ulfooter a,
     border-radius: 20px;
     border: none;
     background-color: black;
+    letter-spacing: 1px;
 }
 
 .navButton button a{
@@ -184,9 +186,11 @@ article form #submit{
     margin:10px 0;
     border: none;
     background: #F4CA10;
-    padding: 4px;
+    padding: 0 20px;
+    height: 40px;
     border-radius: 4px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 aside .formulario2{
@@ -204,6 +208,9 @@ aside form #submit{
     border-radius: 6px;
     background: black;
     font-weight: 700;
+    padding: 0 20px;
+    height: 40px;
+    letter-spacing: 1px;
 }
 
 aside .imageAss{
@@ -264,7 +271,7 @@ footer .final h6{
 }
 
 footer .final{
-    padding: initial;
+    padding: 5px;
     margin: initial;
     text-align: center;
     background-color: #F4CA10;;
@@ -284,11 +291,11 @@ aside form #submit{
         margin: 0 auto;
     }
 
-    .navButton nav li{
+    .navButton .navegation li{
         padding: initial;
         padding: 10px 0;
     }
-    .navButton nav {
+    .navButton .navegation {
         position: absolute;
         margin-top: 40px;
         background-color:white;
@@ -317,15 +324,20 @@ aside form #submit{
 
     .imgs img,
     article section .banner img{
-    width: 100%;
-    border-radius: 4px;
+        width: 100%;
+        border-radius: 4px;
     }
     
     .imgs,
     article section .banner{
-    width: 100%;
-    margin: 5px auto 0 auto;
+        width: 100%;
+        margin: 5px auto 0 auto;
     }
+
+    header .titulo .icones{
+        margin:0 auto;
+    }
+    
 
 }
 
@@ -334,22 +346,6 @@ aside form #submit{
     aside{
         width: 90%;
         margin: 0 auto;
-    }
-
-    .navButton .navegation li{
-        padding: initial;
-        padding: 10px 0;
-    }
-    .navButton .navegation {
-        position: absolute;
-        margin-top: 40px;
-        background-color:white;
-        width: 90%;
-        padding-left: 5px;
-        max-height: 0;
-        overflow: hidden;
-        z-index: 3;
-        transition: 0.4s ease-out;
     }
 
     .navButton{
@@ -421,6 +417,25 @@ aside form #submit{
         margin-top: 90px;
     }
 
+    header .titulo{
+        display: flex;
+        align-items: center;
+    }
+
+    header .titulo .barra{
+        height: 30px;
+        max-width: 400px;
+    }
+
+    header .titulo .icones{
+        margin: initial;
+    }
+
+    header .titulo .icones,
+    header .titulo .barra,
+    header .titulo picture{
+       justify-content: space-between;
+    }
 }
 
 /* @media (min-width:770px){
