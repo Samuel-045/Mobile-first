@@ -6,6 +6,8 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-weight: 500;
+    font-size: medium;
 }
 
 header{
@@ -186,7 +188,7 @@ article form #submit{
     margin:10px 0;
     border: none;
     background: #F4CA10;
-    padding: 0 20px;
+    padding: 0 15px;
     height: 40px;
     border-radius: 4px;
     font-weight: 700;
@@ -208,13 +210,12 @@ aside form #submit{
     border-radius: 6px;
     background: black;
     font-weight: 700;
-    padding: 0 20px;
+    padding: 0 15px;
     height: 40px;
     letter-spacing: 1px;
 }
 
 aside .imageAss{
-    height: 60vw;
     border: 1px solid gray;
 }
 
@@ -261,6 +262,7 @@ footer  .ulfooter .item7{
 }
 
 footer{
+    font-size: medium;
     background-color: black;
 }
 
@@ -281,7 +283,7 @@ article form #submit,
 aside form #submit{
     width: 55%;
     max-width: 350px;
-    min-width: 200px;
+    min-width: 220px;
 }
 
 @media (min-width:320px){
@@ -297,7 +299,7 @@ aside form #submit{
     }
     .navButton .navegation {
         position: absolute;
-        margin-top: 40px;
+        margin-top: 45px;
         background-color:white;
         width: 90%;
         padding-left: 5px;
@@ -405,8 +407,12 @@ aside form #submit{
     }
 
     footer .coluns3 .colun1{
-        max-width: 130px;
-        padding-right: 150px;
+        width: 15%;
+        padding-right: 20%;
+    }
+
+    footer .coluns3 .colun2{
+        padding-right: 10%;
     }
 
     footer .sectionfooter ul li{
@@ -438,10 +444,24 @@ aside form #submit{
     }
 }
 
-/* @media (min-width:770px){
-    article,
-    aside{
-        width: 90%;
-        margin: 0 auto;
+ @media (min-width:1000px){
+    article{
+        width: 60%;
     }
+    aside{
+        width: 30%;
+    }
+
+    .container .banner img{
+        width: 100%;
+    }
+
+    .container{
+        padding:30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   
+
 }
