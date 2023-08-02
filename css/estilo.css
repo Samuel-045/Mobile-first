@@ -40,6 +40,7 @@ header .titulo .icones{
 
 header .titulo .icones img{
     width: 10%;
+    max-width: 25px;
 }
 
 #titulo{
@@ -365,6 +366,7 @@ aside form #submit{
     }
 
     iframe{
+        max-width: 650px;
         height:250px;
     }
 }
@@ -376,11 +378,32 @@ aside form #submit{
         margin: 0 auto;
     }
 
-    article .video{
-        width: initial;
+    article .video .centerr{
+        text-align: center;
+    }
+
+    article .video .imgs iframe{
         width: 100%;
         max-width: 500px;
     }
+
+    footer .coluns3{
+        display: flex;
+    }
+
+    footer .coluns3 .colun1{
+        max-width: 130px;
+        padding-right: 150px;
+    }
+
+    footer .sectionfooter ul li{
+        padding: 5px 0;
+    }
+
+    footer .final{
+        margin-top: 90px;
+    }
+
 }
 
 /* @media (min-width:770px){
