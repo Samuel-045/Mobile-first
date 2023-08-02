@@ -369,6 +369,20 @@ aside form #submit{
         max-width: 650px;
         height:250px;
     }
+
+    article section form .inputsdivs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    article section form .inputdiv{
+        width: 45%;
+    }
+    
+    article section form .inputdiv input{
+        width: 100%;
+    }
 }
 
 @media (min-width:770px){
