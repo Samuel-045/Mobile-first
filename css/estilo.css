@@ -12,7 +12,6 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: #F4CA10;
 }
 
 header .titulo .barra{
@@ -56,7 +55,7 @@ header .titulo .icones img{
 }
 
 nav {
-    padding: 5ppx 0;
+    padding: 5px 0;
     margin: 0 auto;
 }
 
@@ -74,7 +73,11 @@ footer .ulfooter a,
 
 .navButton{
     padding: 5px;
-    display: flex;
+    background: #F4CA10;
+    display: initial;
+    position: -webkit-sticky;   
+    position: sticky;
+    top:-1px;
 }
 
 .navButton .cadastro{
@@ -333,11 +336,11 @@ aside form #submit{
         margin: 0 auto;
     }
 
-    .navButton nav li{
+    .navButton .navegation li{
         padding: initial;
         padding: 10px 0;
     }
-    .navButton nav {
+    .navButton .navegation {
         position: absolute;
         margin-top: 40px;
         background-color:white;
