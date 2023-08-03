@@ -87,14 +87,15 @@ footer .ulfooter a,
     width: 50%;
     max-width: 210px;
     min-width: 190px;
+    min-height: 40px;
+    background-color: black;
+    letter-spacing: 1px;
 }
 
 .navButton .cadastro,
 .navButton button{
     border-radius: 20px;
     border: none;
-    background-color: black;
-    letter-spacing: 1px;
 }
 
 .navButton button a{
@@ -324,7 +325,7 @@ aside form #submit{
         width: 90%;
         padding-left: 5px;
         max-height: 0;
-        overflow: hidden;
+        overflow: hidden; /*lllllllllllllllllllllllllllllllllllllllllllllll*/
         z-index: 3;
         transition: 0.4s ease-out;
     }
@@ -478,9 +479,35 @@ aside form #submit{
     aside{
         width: 25%;
     }
+}
 
-    
-    
-   
+@media (min-width:1050px){
+    .navButton{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navButton .navegation {
+        position: static;
+        margin-top: 0;
+        background:none;
+        width: auto;
+        padding-left: 2px;
+        max-height: none;
+        overflow: visible; /*lllllllllllllllllllllllllllllllllllllllllllllll*/
+        z-index: 2;
+        padding-top:5px;
+    }
+
+    .navButton .navegation li{
+        padding: initial;
+        padding: 0 5px;
+        display: inline;
+    }
+
+    .navButton .botao1{
+        display: none;
+    }
 
 }
