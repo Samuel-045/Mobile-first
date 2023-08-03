@@ -436,6 +436,10 @@ aside form #submit{
     footer .coluns3 .colun2{
         padding-right: 50px;
     }
+    footer .coluns3 .colun2,
+    footer .coluns3 .colun3{
+        max-height: 409px;
+    }
 
     footer .sectionfooter ul li{
         padding: 5px 0;
