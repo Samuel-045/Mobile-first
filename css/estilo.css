@@ -320,12 +320,12 @@ aside form #submit{
     }
     .navButton .navegation {
         position: absolute;
-        margin-top: 45px;
+        margin-top: 49px;
         background-color:white;
         width: 90%;
         padding-left: 5px;
         max-height: 0;
-        overflow: hidden; /*lllllllllllllllllllllllllllllllllllllllllllllll*/
+        overflow: hidden;
         z-index: 3;
         transition: 0.4s ease-out;
     }
@@ -499,8 +499,8 @@ aside form #submit{
         width: auto;
         padding-left: 2px;
         max-height: none;
-        overflow: visible; /*lllllllllllllllllllllllllllllllllllllllllllllll*/
-        z-index: 2;
+        z-index: 3;
+        overflow: visible; 
         padding-top:5px;
     }
 
