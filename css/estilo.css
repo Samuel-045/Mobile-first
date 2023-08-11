@@ -282,10 +282,14 @@ footer .final{
 }
 
 article form #submit,
-aside form #submit{
+aside form #submit2{
     width: 55%;
     max-width: 350px;
     min-width: 220px;
+}
+
+aside form #cadastroAside{
+    color: black;
 }
 
 @media (min-width:320px){
