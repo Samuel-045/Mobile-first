@@ -33,3 +33,29 @@ window.addEventListener('resize', function(event){
         togglesidebar()
     }
 })
+
+//2ª parte
+
+
+const nomeAside = document.getElementById("nome2")
+const emailAside = document.getElementById("email2")
+
+function verificacaoAside(){
+    const nome = nomeAside.value.trim()
+    const email = emailAside.value.trim()
+
+    if(nome==='' || email==='' || nome.lenght<2){
+        document.getElementById("erroAside1").innerHTML="Preencha os campos corretamente!!</br>";   
+    }else{
+        document.getElementById("erroAside1").innerHTML="";   
+    }
+}
+
+document.querySelector("#submit2").addEventListener('click', event => {
+    event.preventDefault()
+    verificacaoAside() 
+    
+    console.log("teste")
+})
+
+

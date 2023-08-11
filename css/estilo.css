@@ -64,7 +64,7 @@ nav {
 }
 
 nav ul li:hover,
-aside form #submit,
+aside form #submit2,
 footer ul li,
 article form #submit,
 #titulo,
@@ -207,7 +207,7 @@ aside .formulario{
     margin: 0 auto;
 }
 
-aside form #submit{
+aside form #submit2{
     border: none;
     border-radius: 6px;
     background: black;
@@ -309,8 +309,9 @@ aside form #submit{
     }
 
     article .esquerda img{
-        min-width: 35px;
-        width: 5%;
+        width: 50%;
+        min-width: 5px;
+        max-width: 35px;
     }
 
     aside{
@@ -377,6 +378,8 @@ aside form #submit{
 
     header .titulo .icones{
         margin:0 auto;
+        align-items: center;
+        justify-content: center;
     }
     
 
@@ -529,6 +532,7 @@ aside form #submit{
     }
 
     article .esquerda img{
+        width: 100%;
         margin:-2px;
     }
 
