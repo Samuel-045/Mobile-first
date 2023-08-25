@@ -48,6 +48,11 @@ O site possui menu na parte inferior do header, causado pelo tamanho da tela.
 </div>
 
 <br>
+<h2>🔨 Funcionalidades</h2>
+
+- `Funcionalidade 1` : Design responsivo usando o conceito mobile first.
+- `Funcionalidade 2` : Menu central utilizado em telas menores.
+
 <h2>Tecnologias e linguagens usadas</h2>
 <p align="left">
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
