@@ -540,38 +540,26 @@ aside form #cadastroAside{
         margin:-2px;
     }
 
-    article .esquerda{
-        float: left;
-        width: 10%;
+    article .caixaDoArticle{
         display: flex;
-        flex-direction: column;
-        position: sticky;
-        top:10px;
-        height: 1240px;
-        margin-bottom: 5%;
     }
 
-    article .direita{
+    article .caixaDoArticle .esquerda{
+        width: 10%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        position: -webkit-sticky;
+        position: sticky;
+        top:10px;
+    }
+
+    article .caixaDoArticle .direita{
         width: 85%;
-        float: right;
     }
 
     article .clear{
         clear: both;
     }
 
-}
-
-@media (min-width:1400px){
-    article .esquerda{
-        margin-bottom: initial;
-        margin-bottom: 10%;
-    }
-}
-
-@media (min-width:1600px){
-    article .esquerda{
-        margin-bottom: initial;
-        margin-bottom: 15%;
-    }
 }
