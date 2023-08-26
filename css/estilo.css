@@ -50,6 +50,7 @@ header .titulo .icones img{
     padding: 5px 0;
     width: 100%;
     background-color: black;
+    text-align: center;
 }
 
 .texttitulo{
@@ -123,7 +124,7 @@ section p span,
 footer p span,
 footer h4,
 footer .ulfooter span{
-    color:#F4CA10;;
+    color:#F4CA10;
 }
 
 a{
