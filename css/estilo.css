@@ -46,15 +46,15 @@ header .titulo .icones img{
     width: 25px;
 }
 
-#titulo{
+.titulo{
     padding: 5px 0;
-    font-weight: bold;
-    text-align: center;
     width: 100%;
     background-color: black;
 }
 
 .texttitulo{
+    font-weight: bold;
+    text-align: center;
     display: none;
 }
 
@@ -64,10 +64,10 @@ nav {
 }
 
 nav ul li:hover,
-aside form #submit2,
+aside form .submit2,
 footer ul li,
-article form #submit,
-#titulo,
+article form .submit,
+.titulo,
 footer p,
 footer ul li a,
 footer .ulfooter a,
@@ -186,7 +186,7 @@ textarea{
     height: 10rem;
 }
 
-article form #submit{
+article form .submit{
     margin:10px 0;
     border: none;
     background: #F4CA10;
@@ -207,7 +207,7 @@ aside .formulario{
     margin: 0 auto;
 }
 
-aside form #submit2{
+aside form .submit2{
     border: none;
     border-radius: 6px;
     background: black;
@@ -281,14 +281,14 @@ footer .final{
     background-color: #F4CA10;;
 }
 
-article form #submit,
-aside form #submit2{
+article form .submit,
+aside form .submit2{
     width: 55%;
     max-width: 350px;
     min-width: 220px;
 }
 
-aside form #cadastroAside{
+aside form .cadastroAside{
     color: black;
 }
 

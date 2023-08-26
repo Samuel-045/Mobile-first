@@ -34,8 +34,12 @@ window.addEventListener('resize', function(event){
     }
 })
 
-//2ª parte
+// 2-1ª parte
 
+
+
+
+// 2-2ª parte
 
 const nomeAside = document.getElementById("nome2")
 const emailAside = document.getElementById("email2")
@@ -74,7 +78,7 @@ function verificacaoAside(){
 
 }
 
-document.querySelector("#submit2").addEventListener('click', event => {
+document.querySelector("#submit2").addEventListener('click', event => { //botão aside
     event.preventDefault()
     verificacaoAside() 
     
