@@ -387,6 +387,10 @@ aside form .cadastroAside{
         justify-content: center;
     }
     
+    article section form .inputdiv{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
