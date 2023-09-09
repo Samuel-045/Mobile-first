@@ -86,22 +86,21 @@ footer .ulfooter a,
 }
 
 .navButton .cadastro{
+    padding-top: 5px;
+    text-align: center;
     width: 50%;
     max-width: 210px;
     min-width: 190px;
-    min-height: 40px;
+    min-height: 30px;
     background-color: black;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .navButton .cadastro,
 .navButton button{
     border-radius: 20px;
     border: none;
-}
-
-.navButton button a{
-    font-weight: 500;
 }
 
 .navButton button{
