@@ -34,24 +34,65 @@ window.addEventListener('resize', function(event){
     }
 })
 
-// 2-1ª parte
+// 2ªparte- parte 1-  primeiro botão
+// função do botão submit do <article>
 
-
-
-
-// 2-2ª parte
-
-const nomeAside = document.getElementById("nome2")
-const emailAside = document.getElementById("email2")
-
-function verificacaoAside(){
+function verificacaoArticle(nomeArticle, emailArticle, comentarioArticle, siteArticle){
+    var nomeArt = nomeArticle.value.trim()
+    var emailArt = emailArticle.value.trim()
+    var comentario = comentarioArticle.value.trim()
     var nomeCond = false
-    const nome = nomeAside.value.trim()
-    const email = emailAside.value.trim()
 
-   
+    if(comentario.length<=1){
+        document.getElementById("erroArt1").innerHTML="Comentário muito curto<br>"
+    }else{
+        document.getElementById("erroArt1").innerHTML="Comentário válido<br>"
+    }
+    
+    if(nomeArt.length<=1){
+        document.getElementById("erroArt2").innerHTML="Nome muito curto<br>"
+        nomeCond = nomeCond
+    }else{
+        nomeCond =! nomeCond
+        document.getElementById("erroArt2").innerHTML="Nome válido<br>"
+    }
 
-    if(nome.length<=1){
+    const regex = /^[a-z0-9]+@[a-z0-9.-]+\.[a-z]{2,}$/i
+    var cond = regex.test(emailArt)
+
+    if(cond){
+        document.getElementById("erroArt3").innerHTML="Email válido<br>"
+    }else{
+        document.getElementById("erroArt3").innerHTML="Email inválido<br><br>"
+    }
+
+    if(nomeArt==='' || emailArt==='' || nomeCond===false || cond===false || (comentario==='' || comentario<=3)){
+        document.getElementById("erroArtGeral").innerHTML="Preencha os campos corretamente!!</br>";   
+    }else if(cond && nomeCond){
+        document.getElementById("erroArtGeral").innerHTML="Cadastro realizado com sucesso "+nomeArt.value+" !!"  
+    }else{
+        document.getElementById("erroArtGeral").innerHTML="";   
+    }
+}
+
+const nomeArticle = document.getElementById("nome1")
+const emailArticle = document.getElementById("email1")
+const comentarioArticle = document.getElementById("comentario")
+const siteArticle = document.getElementById("site")
+
+document.querySelector("#submit1").addEventListener('click', event => { //botão submit <article>
+    event.preventDefault()
+    verificacaoArticle(nomeArticle, emailArticle, comentarioArticle, siteArticle) 
+})
+
+// 2ªparte- parte 2-  segundo botão
+// função do botão submit do <aside>
+function verificacaoAside(nomeAside, emailAside){
+    var nomeCond = false
+    const nomeAsd = nomeAside.value.trim()
+    const emailAsd = emailAside.value.trim()
+
+    if(nomeAsd.length<=1){
         document.getElementById("erroAside2").innerHTML="Nome muito curto"
         nomeCond = nomeCond
     }else{
@@ -60,7 +101,7 @@ function verificacaoAside(){
     }
 
     const regex = /^[a-z0-9]+@[a-z0-9.-]+\.[a-z]{2,}$/i
-    var cond =regex.test(email)
+    var cond =regex.test(emailAsd)
 
     if(cond){
         document.getElementById("erroAside3").innerHTML="Email válido"
@@ -68,7 +109,7 @@ function verificacaoAside(){
         document.getElementById("erroAside3").innerHTML="Email inválido<br><br>"
     }
 
-    if(nome==='' || email==='' || nome.length<=1 || cond===false){
+    if(nomeAsd==='' || emailAsd==='' || nomeCond===false || cond===false){
         document.getElementById("erroAside1").innerHTML="Preencha os campos corretamente!!</br>";   
     }else if(cond && nomeCond){
         document.getElementById("erroAside1").innerHTML="Cadastro realizado com sucesso "+nomeAside.value+" !!"  
@@ -78,11 +119,13 @@ function verificacaoAside(){
 
 }
 
-document.querySelector("#submit2").addEventListener('click', event => { //botão aside
+const nomeAside = document.getElementById("nome2")  
+const emailAside = document.getElementById("email2")
+
+document.querySelector("#submit2").addEventListener('click', event => { //botão submit <aside>
     event.preventDefault()
-    verificacaoAside() 
-    
-    
+    verificacaoAside(nomeAside, emailAside) 
 })
+
 
 //3ª parte
