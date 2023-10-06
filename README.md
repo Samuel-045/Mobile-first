@@ -1,6 +1,6 @@
 # Mobile-first
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-EM_DESENVOLVIMENTO-blue">
+  <img src="https://img.shields.io/badge/Status-FINALIZADO-blue">
   <img src="https://img.shields.io/github/last-commit/Samuel-045/Mobile-first?color=blue">
 </p>
 
@@ -52,6 +52,7 @@ O site possui menu na parte inferior do header, causado pelo tamanho da tela.
 
 - `Funcionalidade 1` : Design responsivo usando o conceito mobile first.
 - `Funcionalidade 2` : Menu central utilizado em telas menores.
+- `Funcionalidade 3` : Validação dos formulários com JS.
 
 <h2>Tecnologias e linguagens usadas</h2>
 <p align="left">
