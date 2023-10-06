@@ -67,7 +67,7 @@ function verificacaoArticle(nomeArticle, emailArticle, comentarioArticle, siteAr
     if(nomeArt==='' || emailArt==='' || nomeCond===false || cond===false || (comentario==='' || comentario<=3)){
         document.getElementById("erroArtGeral").innerHTML="Preencha os campos corretamente!!</br>";   
     }else if(cond && nomeCond){
-        document.getElementById("erroArtGeral").innerHTML="Cadastro realizado com sucesso "+nomeArt.value+" !!"  
+        document.getElementById("erroArtGeral").innerHTML="Cadastro realizado com sucesso "+nomeArticle.value+" !!"
     }else{
         document.getElementById("erroArtGeral").innerHTML="";   
     }
