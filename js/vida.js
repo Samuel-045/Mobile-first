@@ -9,11 +9,9 @@ function togglesidebar(){
 
     if(showsdbar){        
         nav.style.maxHeight=nav.scrollHeight+"px"
-        main.style.filter='blur(2px)'
         document.getElementById("imagem").src="../image/x.png"
     }else{
         nav.style.maxHeight="0"
-        main.style.filter=''
         document.getElementById("imagem").src="../image/menu.png"
     }
 
