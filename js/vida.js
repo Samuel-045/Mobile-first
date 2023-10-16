@@ -126,4 +126,3 @@ document.querySelector("#submit2").addEventListener('click', event => { //botão
 })
 
 
-//3ª parte
