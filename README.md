@@ -42,7 +42,7 @@ O site possui menu na parte inferior do header, causado pelo tamanho da tela.
   <br><br><img src="https://github.com/Samuel-045/Mobile-first/assets/95144250/66a438cc-0821-472b-9e3b-a95de4e248aa">
 
 
-  >Formulários criados no site, que terão um retorno com o javascript.
+  >Formulários criados no site, que possuem retorno com o javascript.
 
 
 </div>
